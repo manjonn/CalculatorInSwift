@@ -55,6 +55,7 @@ class ViewController: UIViewController {
         var result : AnyObject!=exp.expressionValueWithObject(nil, context: nil)
         
         displayLabel.text="\(result)"
+        op=""
         
     }
     
@@ -83,7 +84,7 @@ class ViewController: UIViewController {
         
         var dl:Double=displayLabel.text.bridgeToObjectiveC().doubleValue
         var res=dl/100;
-        displayLabel.text="\(ress)"
+        displayLabel.text="\(res)"
         
     }
     /*
