@@ -11,6 +11,7 @@ import UIKit
 var op1:Double=0;
 var op2:Double=0;
 var op:String="";
+var clearDisp:Bool=false
 
 
 class ViewController: UIViewController {
@@ -28,6 +29,11 @@ class ViewController: UIViewController {
         if sender.currentTitle=="." && displayLabel.text.rangeOfString("."){
             
             return;
+            
+        }
+        if clearDisp{
+            displayLabel.text="0"
+            clearDisp=false
             
         }
         if self.displayLabel.text=="0"{
@@ -56,6 +62,7 @@ class ViewController: UIViewController {
         
         displayLabel.text="\(result)"
         op=""
+        clearDisp=true
         
     }
     
