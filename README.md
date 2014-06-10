@@ -1,0 +1,1 @@
+This is an exmple Calculator written in Swift
